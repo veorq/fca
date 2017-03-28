@@ -1,2 +1,2 @@
-#!/bin/bash
-rg -i -e md2 -e md4 -e md5 -e sha1 -e rc2 -e rc4 -e mersenne -e ecb -e 3des -e getpid -e srand $1
+#!/bin/sh
+exec rg -i -e 'md2|md4|md5|sha1|rc2|rc4|mersenne|ecb|3des|getpid|srand' $1
